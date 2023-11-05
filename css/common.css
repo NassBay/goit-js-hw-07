@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, Montserrat, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* task-01 */
+
+#categories {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.categories-name {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+  margin-bottom: 16px;
+}
+
+.caregories-box {
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 16px;
+}
+
+.list-item-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.categories-list-item {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  padding: 8px 16px;
+}
+
+/* task-2 */
+
+.gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  height: 300px;
+  width: 360px;
+  overflow: hidden;
+}
+
+.gallery-img {
+  max-height: 100%;
+  width: auto;
+}
+
+/* task-03 */
+
+.name-input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 360px;
+  height: 40px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  transition: border-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.name-input:hover,
+.name-input:focus {
+  border-color: #000;
+}
+
+.name-hello {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+}
+
+/* task-04 */
+
+.login-form input {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.login-form input:hover,
+.login-form input:focus {
+  border-color: #000;
+}
+
+.login-form label {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.login-form button {
+  border-radius: 8px;
+  background-color: #4e75ff;
+  padding: 8px 16px;
+  border-style: none;
+  max-width: 86px;
+  margin-top: 8px;
+  color: #fff;
+  transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  background: #6c8cff;
+}
+
+/* task-05 */
+
+.widget {
+  padding: 100px 88px;
+}
+
+.widget p {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  margin-bottom: 16px;
+}
+
+.widget button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border-style: none;
+  height: 40px;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.widget button:hover,
+.widget button:focus {
+  background: #6c8cff;
+}
+
+/* task-06 */
+
+#controls {
+  border-radius: 8px;
+  background: #f6f6fe;
+  display: flex;
+  padding: 32px;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#controls input {
+  padding: 8px 72px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  transition: border-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#controls input:hover,
+#controls input:focus {
+  border-color: #000;
+}
+
+#controls button {
+  width: 120px;
+  padding: 8px 16px;
+  border-style: none;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+}
+
+.create-button {
+  background: #4e75ff;
+  transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.create-button:hover,
+.create-button:focus {
+  background: #6c8cff;
+}
+
+.destroy-button {
+  background: #ff4e4e;
+  transition: background cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.destroy-button:hover,
+.destroy-button:focus {
+  background: #ff7070;
+}
+
+#boxes {
+  background: #f6f6fe;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 32px;
+}
